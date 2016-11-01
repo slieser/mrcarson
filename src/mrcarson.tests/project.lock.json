@@ -16,6 +16,19 @@
           "lib/netstandard1.1/Autofac.dll": {}
         }
       },
+      "Chroniton.NetCore/1.0.3.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "TheCollective.NetCore": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Chroniton.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Chroniton.NetCore.dll": {}
+        }
+      },
       "dotnet-test-nunit/3.4.0-beta-2": {
         "type": "package",
         "dependencies": {
@@ -2449,6 +2462,18 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "TheCollective.NetCore/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.6/TheCollective.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/TheCollective.NetCore.dll": {}
+        }
+      },
       "TweetinviAPI/1.2.0-alpha2": {
         "type": "package",
         "dependencies": {
@@ -2484,13 +2509,28 @@
         "dependencies": {
           "Microsoft.NETCore.App": "1.0.1",
           "Newtonsoft.Json": "9.0.2-beta1",
-          "TweetinviAPI": "1.2.0-alpha2"
+          "TweetinviAPI": "1.2.0-alpha2",
+          "mrcarson.scheduling": "1.0.0"
         },
         "compile": {
           "netcoreapp1.0/mrcarson.dll": {}
         },
         "runtime": {
           "netcoreapp1.0/mrcarson.dll": {}
+        }
+      },
+      "mrcarson.scheduling/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "Chroniton.NetCore": "1.0.3.3",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/mrcarson.scheduling.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/mrcarson.scheduling.dll": {}
         }
       }
     }
@@ -2507,6 +2547,16 @@
         "lib/net45/Autofac.xml",
         "lib/netstandard1.1/Autofac.dll",
         "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
+    "Chroniton.NetCore/1.0.3.3": {
+      "sha512": "akIwE7Wwg1t++97SynlIkszgKR65T5hTYm2vr6zIqUZMwFFhv2Vam1ALEqGqEWFesCryekYYWdFBpac3OyANOg==",
+      "type": "package",
+      "path": "Chroniton.NetCore/1.0.3.3",
+      "files": [
+        "Chroniton.NetCore.1.0.3.3.nupkg.sha512",
+        "Chroniton.NetCore.nuspec",
+        "lib/netstandard1.6/Chroniton.NetCore.dll"
       ]
     },
     "dotnet-test-nunit/3.4.0-beta-2": {
@@ -7509,6 +7559,16 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
+    "TheCollective.NetCore/1.0.1": {
+      "sha512": "Fn0QubCDPFYL6WLi+PZwRSifHtAqyxJ/J6AYHO1SStVJyr5HLLsFZBuRJn9z5TmQoNYmHWDx3+VdGmhMgCnDtA==",
+      "type": "package",
+      "path": "TheCollective.NetCore/1.0.1",
+      "files": [
+        "TheCollective.NetCore.1.0.1.nupkg.sha512",
+        "TheCollective.NetCore.nuspec",
+        "lib/netstandard1.6/TheCollective.NetCore.dll"
+      ]
+    },
     "TweetinviAPI/1.2.0-alpha2": {
       "sha512": "ST2GDyAYnnxUq0/DhSXMXz7TfreyfdnwfyxOaZZKd6eZZF7PHvN4CN2Kl2snzQQ0Qt/YhbqUSblCulCg8t5CRA==",
       "type": "package",
@@ -7545,6 +7605,11 @@
       "type": "project",
       "path": "../mrcarson/project.json",
       "msbuildProject": "../mrcarson/mrcarson.xproj"
+    },
+    "mrcarson.scheduling/1.0.0": {
+      "type": "project",
+      "path": "../mrcarson.scheduling/project.json",
+      "msbuildProject": "../mrcarson.scheduling/mrcarson.scheduling.xproj"
     }
   },
   "projectFileDependencyGroups": {
