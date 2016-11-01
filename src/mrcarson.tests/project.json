@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "copyToOutput": {
+      "includeFiles": [ "content\\Tweets.csv" ]
+    }
+  },
+  
+  "testRunner": "nunit",
+
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.1"
+    },
+    "NUnit": "3.5.0",
+    "dotnet-test-nunit": "3.4.0-beta-2",
+    "mrcarson": "1.0.0-*",
+    "FluentAssertions": "4.16.0"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  }
+}

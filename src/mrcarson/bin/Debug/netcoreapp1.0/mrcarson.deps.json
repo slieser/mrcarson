@@ -1,0 +1,82 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.0",
+    "signature": "447540751c187bc67a53507a87a7d7e1680fb57a"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.0": {
+      "mrcarson/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.2-beta1",
+          "TweetinviAPI": "1.2.0-alpha2"
+        },
+        "runtime": {
+          "mrcarson.dll": {}
+        }
+      },
+      "Autofac/4.1.0": {
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.2-beta1": {
+        "dependencies": {
+          "System.Runtime.Serialization.Primitives": "4.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.1.1": {
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
+        }
+      },
+      "TweetinviAPI/1.2.0-alpha2": {
+        "dependencies": {
+          "Autofac": "4.1.0",
+          "Newtonsoft.Json": "9.0.2-beta1"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Tweetinvi.Controllers.dll": {},
+          "lib/netstandard1.6/Tweetinvi.Core.dll": {},
+          "lib/netstandard1.6/Tweetinvi.Credentials.dll": {},
+          "lib/netstandard1.6/Tweetinvi.Factories.dll": {},
+          "lib/netstandard1.6/Tweetinvi.Logic.dll": {},
+          "lib/netstandard1.6/Tweetinvi.Security.dll": {},
+          "lib/netstandard1.6/Tweetinvi.Streams.dll": {},
+          "lib/netstandard1.6/Tweetinvi.WebLogic.dll": {},
+          "lib/netstandard1.6/Tweetinvi.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "mrcarson/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Autofac/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PZlRrOjtQ/pyxoA/oDuyFsKlL/toYIxfL4wQvm9TY7lj+/jeQHQIlJ832nwvPFBlOuRZQErHsfsGmo3zW+pCxA=="
+    },
+    "Newtonsoft.Json/9.0.2-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bq5DjCtCJpy9R5rsEeQlKz8qGF1Bh3wGaJKMlRwmCoKZ8WUCIFtU3JlyMOdAkSn66KCehCCAxMZFOQD4nNnH/w=="
+    },
+    "System.Runtime.Serialization.Primitives/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HZ6Du5QrTG8MNJbf4e4qMO3JRAkIboGT5Fk804uZtg3Gq516S7hAqTm2UZKUHa7/6HUGdVy3AqMQKbns06G/cg=="
+    },
+    "TweetinviAPI/1.2.0-alpha2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ST2GDyAYnnxUq0/DhSXMXz7TfreyfdnwfyxOaZZKd6eZZF7PHvN4CN2Kl2snzQQ0Qt/YhbqUSblCulCg8t5CRA=="
+    }
+  }
+}
