@@ -1,9 +1,9 @@
 {
   "version": "1.0.0-*",
   "buildOptions": {
-    "emitEntryPoint": true
+    "emitEntryPoint": true,
+    "debugType": "portable"
   },
-
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
@@ -13,10 +13,16 @@
     "Newtonsoft.Json": "9.0.2-beta1",
     "TweetinviAPI": "1.2.0-alpha2"
   },
-
   "frameworks": {
     "netcoreapp1.0": {
       "imports": "dnxcore50"
     }
+  },
+  "publishOptions": {
+    "include": [
+      "docker-compose.yml",
+      "Dockerfile",
+      ".dockerignore"
+    ]
   }
 }
